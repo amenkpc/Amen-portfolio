@@ -1,0 +1,7 @@
+# Bibliothèques tierces : exclues du calcul des langages GitHub (Linguist)
+# pour que la barre reflète le code réellement écrit par Lenee, pas les libs vendorisées.
+icones/** linguist-vendored
+js/typed.min.js linguist-vendored
+
+# Normalise les fins de ligne (utile vu le dual-boot Windows/Ubuntu)
+* text=auto
