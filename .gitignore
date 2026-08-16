@@ -1,2 +1,15 @@
+# Environnement et secrets
 .env
+
+# Anciennes versions HTML (pré-migration PHP)
 sauvegarde/
+
+# Fichiers envoyés depuis l'espace admin (contenu généré à l'exécution, pas du code source)
+uploads/*
+!uploads/.gitkeep
+
+# Fichiers système et éditeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
