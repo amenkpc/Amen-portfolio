@@ -31,7 +31,7 @@ Site portfolio personnel, entièrement dynamique, sécurisé et multilingue (Fra
 ## ⚙️ Installation
 
 1. **Copier les fichiers** du projet dans le répertoire de votre serveur web (`htdocs` ou `www`).
-2. **Importer la base de données** depuis le fichier [database.sql](file:///c:/Users/Lenee/3D%20Objects/portfolioo/database.sql) :
+2. **Importer la base de données** depuis le fichier [database.sql](database.sql) :
    ```bash
    mysql -u root -p < database.sql
    ```
