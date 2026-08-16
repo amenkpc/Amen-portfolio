@@ -1,0 +1,46 @@
+CURRICULUM VITAE
+
+NOM: Lenee Hartson
+DATE DE NAISSANCE: 07 janvier 1998
+AGE: 28 ans
+SITE WEB: www.Textos.com
+EMAIL: Leneehartson@gmail.com
+TELEPHONE: +229 ** ** ** **
+STATUT: Disponible en freelance
+
+---
+
+COMPETENCES TECHNIQUES:
+
+- JavaScript (JS): 86%
+- MySQL: 50%
+- PHP: 66%
+- HTML: 96%
+- CSS: 76%
+
+---
+
+FORMATION:
+
+2020 - 2022: Master in computer science
+Formation approfondie en développement logiciel, bases de données et architecture web.
+
+---
+
+DOMAINES D'EXPERTISE:
+
+- Web Design
+- Web Development
+- Graphic Design
+- Cyber Security
+
+---
+
+À PROPOS:
+
+Je suis un web designer et développeur avec une grande expérience en création et design de sites web, graphique design et cybersécurité.
+
+---
+
+Pour obtenir une version PDF complète de ce CV avec le design professionnel,
+veuillez contacter: Leneehartson@gmail.com

@@ -1,0 +1,46 @@
+# ----------------------------------------------------------------------
+# PORTFOLIO SECURITY CONFIGURATION
+# ----------------------------------------------------------------------
+
+# Désactiver le listage des dossiers (protection de la structure des répertoires)
+Options -Indexes
+
+# Bloquer l'accès aux fichiers sensibles de configuration et de documentation
+<FilesMatch "^\.env|database\.sql|README\.md|walkthrough\.md|task\.md|implementation_plan\.md|\.gitignore|\.git">
+    <IfModule authz_core_module>
+        Require all denied
+    </IfModule>
+    <IfModule !authz_core_module>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Réécriture d'URL pour le Sitemap XML dynamique
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^sitemap\.xml$ sitemap.php [L]
+</IfModule>
+
+# ----------------------------------------------------------------------
+# CACHE NAVIGATEUR — polices, CSS, JS, images
+# Objectif : une fois téléchargées, ces ressources ne sont plus jamais
+# redemandées au serveur tant qu'elles ne changent pas (fini le "flash"
+# de police à chaque navigation/actualisation une fois le premier
+# chargement effectué).
+# ----------------------------------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType font/woff2            "access plus 1 year"
+    ExpiresByType font/ttf              "access plus 1 year"
+    ExpiresByType text/css              "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png             "access plus 1 month"
+    ExpiresByType image/jpeg            "access plus 1 month"
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(woff2|ttf|css|js)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+</IfModule>

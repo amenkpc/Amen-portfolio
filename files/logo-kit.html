@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>My Portfolio — Logo Files</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background:#f5f5f5; color:#1a1a1a; }
+header { background:#fff; border-bottom:1px solid #e0e0e0; padding:16px 40px; display:flex; align-items:center; justify-content:space-between; }
+header h1 { font-size:20px; font-weight:600; }
+header span { font-size:13px; color:#888; }
+.page { padding:40px; max-width:1200px; margin:0 auto; }
+h2 { font-size:24px; font-weight:700; margin-bottom:32px; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.card { background:#fff; border-radius:12px; overflow:hidden; border:1px solid #e8e8e8; }
+.preview {
+  display:flex; align-items:center; justify-content:center;
+  height:180px; padding:24px;
+  background-size: 20px 20px;
+}
+.preview img { max-width:100%; max-height:100%; object-fit:contain; }
+.preview.dark  { background-color:#0a0a0a; }
+.preview.white { background-color:#ffffff; }
+.preview.transparent {
+  background-color:#e8e8e8;
+  background-image: linear-gradient(45deg,#ccc 25%,transparent 25%),
+    linear-gradient(-45deg,#ccc 25%,transparent 25%),
+    linear-gradient(45deg,transparent 75%,#ccc 75%),
+    linear-gradient(-45deg,transparent 75%,#ccc 75%);
+  background-size:20px 20px;
+  background-position:0 0,0 10px,10px -10px,-10px 0;
+}
+.card-foot { padding:16px 20px; border-top:1px solid #f0f0f0; display:flex; align-items:center; justify-content:space-between; }
+.card-foot .lbl { font-size:13px; font-weight:500; color:#333; }
+.dl-btn { display:inline-flex; align-items:center; gap:6px; background:#f0f0f0; border:none; border-radius:6px; padding:7px 14px; font-size:12px; font-weight:500; cursor:pointer; color:#333; text-decoration:none; }
+.dl-btn:hover { background:#e0e0e0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Your logo files</h1>
+  <span>Concept 01 — Hexagone</span>
+</header>
+<div class="page">
+  <div class="grid">
+
+    <div class="card">
+      <div class="preview dark">
+        <img src="01-full-color-padding.png" alt="Full color with padding">
+      </div>
+      <div class="card-foot">
+        <span class="lbl">Full color with padding</span>
+        <a class="dl-btn" href="01-full-color-padding.png" download>↓ Download</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview transparent">
+        <img src="02-primary-transparent.png" alt="Primary on transparent">
+      </div>
+      <div class="card-foot">
+        <span class="lbl">Primary on transparent</span>
+        <a class="dl-btn" href="02-primary-transparent.png" download>↓ Download</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview transparent">
+        <img src="03-black-transparent.png" alt="Black on transparent">
+      </div>
+      <div class="card-foot">
+        <span class="lbl">Black on transparent</span>
+        <a class="dl-btn" href="03-black-transparent.png" download>↓ Download</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview transparent">
+        <img src="04-white-transparent.png" alt="White on transparent">
+      </div>
+      <div class="card-foot">
+        <span class="lbl">White on transparent</span>
+        <a class="dl-btn" href="04-white-transparent.png" download>↓ Download</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview white">
+        <img src="05-color-on-white.png" alt="Color logo on white">
+      </div>
+      <div class="card-foot">
+        <span class="lbl">Color logo on white</span>
+        <a class="dl-btn" href="05-color-on-white.png" download>↓ Download</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview transparent">
+        <img src="06-symbol-only.png" alt="Symbol only">
+      </div>
+      <div class="card-foot">
+        <span class="lbl">Symbol only</span>
+        <a class="dl-btn" href="06-symbol-only.png" download>↓ Download</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

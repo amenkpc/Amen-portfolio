@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /Notification.php
+Disallow: /forgot_password.php
+Disallow: /reset_password.php
+Disallow: /save_contact.php
+Disallow: /set_lang.php
+
+Sitemap: /sitemap.php

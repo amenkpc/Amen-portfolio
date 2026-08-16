@@ -1,0 +1,8 @@
+# Bloquer l'accès direct à tous les fichiers de ce dossier
+<IfModule authz_core_module>
+    Require all denied
+</IfModule>
+<IfModule !authz_core_module>
+    Order deny,allow
+    Deny from all
+</IfModule>

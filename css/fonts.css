@@ -1,0 +1,42 @@
+/* ============================================================
+   POPPINS — Police locale (ne nécessite pas de connexion internet)
+   Fichiers WOFF2 : ~68% plus légers que les .ttf d'origine
+   Poids 300 retiré (inutilisé nulle part dans le CSS/PHP/JS)
+   -> 5 fichiers, 769 Ko (.ttf) / 248 Ko (.woff2) au total
+   ============================================================ */
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/woff2/Poppins-Italic-400.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/woff2/Poppins-Regular-400.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/woff2/Poppins-Regular-500.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../fonts/woff2/Poppins-Regular-600.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/woff2/Poppins-Regular-700.woff2') format('woff2');
+}
